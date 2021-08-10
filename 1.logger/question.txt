@@ -1,0 +1,22 @@
+Question:
+============================================================================================
+Implement a logging API which can accept logging requests from:
+  - Function calls within the same process
+  - Messages sent to a network socket
+
+Log outout can be sent to different sinks.
+  - Log to standart output
+  - Log to a file
+Design should make it possible to add more supported sinks in future. 
+It should be configurable to send log to multiple sinks for a client that uses logging API.
+
+
+Solution:
+============================================================================================
+cmake .
+make
+cd bin
+./logger_test
+
+logger_test main creates two log entries by using function calls. Also creates two listeners
+to receive log requests. Log requests can be simply sent via a telnet connection.
