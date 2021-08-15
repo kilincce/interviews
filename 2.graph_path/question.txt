@@ -1,0 +1,24 @@
+Question:
+============================================================================================
+Connections between the nodes of a undirected graph which has N nodes is given with a two
+dimentional array with size of N. Graph nodes are numbered 1 to N and each index of the 
+input array represents the connections to other nodes for the node of that 1 based index.
+
+A = {{2,3}, {1,3}, {1,2}}
+
+which means:
+ 1 -- 2
+ 1 -- 3
+ 2 -- 1
+ 2 -- 3
+ 3 -- 1
+ 3 -- 2
+
+ For a given graph as described, find if a path from node 1 to node K exist. 
+ Return true if path exists, false otherwise. 
+
+
+
+Solution:
+============================================================================================
+
